@@ -18,8 +18,6 @@ def create_app() -> Flask:
 
 	db = SQLAlchemy(app)
 
-	app = create_app()
-
 
 	class Project(db.Model):
 		__tablename__ = "projects"
@@ -177,6 +175,6 @@ def create_app() -> Flask:
 
 
 if __name__ == "__main__":
-	app = create_app()
-	port = int(os.environ.get("PORT", 5000))
-	app.run(host="0.0.0.0", port=port, debug=True) 
+    app = create_app()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
