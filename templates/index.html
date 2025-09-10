@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="container mx-auto px-6 pt-10 pb-24">
+	<div class="grid md:grid-cols-2 gap-10 items-center">
+		<div>
+			<h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+				Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-fuchsia-500">Muhammed Rashik</span>
+			</h1>
+			<p class="mt-4 text-gray-600 dark:text-gray-300 max-w-xl">
+				I build elegant, fast, and accessible web experiences with Python, Tailwind CSS, and modern JavaScript.
+			</p>
+			<div class="mt-8 flex flex-col sm:flex-row gap-4">
+				<a href="#projects" class="px-5 py-3 rounded-full bg-primary text-white shadow-lg shadow-primary/30 hover:shadow-primary/50 transition text-center">View Projects</a>
+				<a href="#contact" class="px-5 py-3 rounded-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 hover:ring-2 ring-primary transition text-center">Contact Me</a>
+			</div>
+		</div>
+		<div class="relative h-64 sm:h-72 md:h-96 flex items-center justify-center">
+			<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Muhammed Rashik" class="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-3xl object-cover ring-4 ring-primary/30 shadow-2xl"/>
+		</div>
+	</div>
+</section>
+
+<!-- <section id="profile" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Profile</h2>
+	<div class="mt-6 grid md:grid-cols-[220px,1fr] gap-6 items-center">
+		<div class="flex justify-center md:justify-start">
+			<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile photo" class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover ring-4 ring-primary/30 shadow-xl"/>
+		</div>
+		<div>
+			<h3 class="text-xl font-semibold">Muhammed Rashik</h3>
+			<p class="mt-2 text-gray-600 dark:text-gray-300 max-w-2xl">
+				Passionate developer focused on building stylish, performant web apps with clean code and delightful UX.
+			</p>
+			<div class="mt-4 flex flex-wrap gap-3 text-sm">
+				<span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800">Flask</span>
+				<span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800">Tailwind CSS</span>
+				<span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800">JavaScript</span>
+				<span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800">MySQL</span>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section id="about" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">About</h2>
+	<p class="mt-4 max-w-3xl text-gray-600 dark:text-gray-300">
+		I'm a full‑stack developer who loves crafting stylish, interactive UIs and solid backends.
+	</p>
+</section>
+
+<section id="skills" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Skills</h2>
+	<div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div class="p-5 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Frontend</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">HTML, CSS, Tailwind, JavaScript ,React ,Bootstrap, Canvas</p>
+		</div>
+		<div class="p-5 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Backend</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Python, Flask,Django, REST APIs</p>
+		</div>
+		<div class="p-5 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Databases</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">MySQL,MongoDB </p>
+		</div>
+		<div class="p-5 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Tools</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Git, CI/CD, Docker basics</p>
+		</div>
+	</div>
+</section>
+
+<section id="experience" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Experience</h2>
+	<div class="mt-6 space-y-4">
+		<div class="p-5 rounded-2xl bg-white/60 dark:bg-white/5 backdrop-blur border border-gray-200 dark:border-gray-800">
+			<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+				<h3 class="font-semibold">Python Full Stack Developer @ One Team Solutions kochi</h3>
+				<span class="text-sm text-gray-500">2025 — Present</span>
+			</div>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Completed an internship as a Python Full Stack Developer Intern at OneTeam Solutions, where I gained hands-on experience in Django, React, and REST API integration. Worked on real-world projects including building web applications, implementing authentication, and improving UI/UX features</p>
+		</div>
+		<!-- <div class="p-5 rounded-2xl bg-white/60 dark:bg-white/5 backdrop-blur border border-gray-200 dark:border-gray-800">
+			<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+				<h3 class="font-semibold">Role @ Company</h3>
+				<span class="text-sm text-gray-500">2021 — 2023</span>
+			</div>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Short description of responsibilities and impact.</p>
+		</div> -->
+	</div>
+</section>
+
+<section id="projects" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Projects</h2>
+	<div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+		{% for p in projects %}
+		{% set link = (p.github_url if p.github_url and p.github_url != '#' else (p.project_url if p.project_url and p.project_url != '#' else '#')) %}
+		{# Fallback to known GitHub URLs by title if DB has placeholders #}
+		{% if not link or link == '#' %}
+			{% if p.title == 'Connectify' %}
+				{% set link = 'https://github.com/Rashik8606/Connectify' %}
+			{% elif p.title == 'OnlineMov' %}
+				{% set link = 'https://github.com/Rashik8606/Express-basics' %}
+			{% elif p.title == 'Taskizo' %}
+				{% set link = 'https://github.com/Rashik8606/Job-Indeed' %}
+			{% elif p.title == 'Vegstore' or p.title == 'Vegstore' %}
+				{% set link = 'https://github.com/Rashik8606/vegstore' %}
+			{% endif %}
+		{% endif %}
+		<a href="{{ link }}" target="_blank" rel="noreferrer" class="group rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-white/5 backdrop-blur hover:shadow-xl hover:-translate-y-1 transition block">
+			<div class="aspect-[16/10] bg-gray-100 dark:bg-gray-900 overflow-hidden">
+				{% set is_external = p.image_url and (p.image_url.startswith('http://') or p.image_url.startswith('https://')) %}
+				<img src="{{ p.image_url if is_external else url_for('static', filename=p.image_url or 'images/profile.jpg') }}" alt="{{ p.title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+
+			</div>
+			<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-black-600 transition">
+    {{ p.title }}
+</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm line-clamp-3 mb-2">
+    {{ p.description or 'No description available.' }}
+</p>
+		</a>
+		{% endfor %}
+	</div>
+</section>
+
+<section id="services" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Services</h2>
+	<div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+		<div class="p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Web Development</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Full‑stack apps with Flask, SQLAlchemy, Tailwind, and JS.</p>
+		</div>
+		<div class="p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">API Design</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">RESTful APIs with secure auth and clean documentation.</p>
+		</div>
+		<div class="p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">UI/UX Polish</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern, accessible, and responsive UI implementation.</p>
+		</div>
+	</div>
+</section>
+
+<section id="testimonials" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Testimonials</h2>
+	<div class="mt-6 grid md:grid-cols-2 gap-6">
+		<blockquote class="p-6 rounded-2xl bg-white/60 dark:bg-white/5 backdrop-blur border border-gray-200 dark:border-gray-800">
+			<p>“Delivered a beautiful and fast site ahead of schedule.”</p>
+			<footer class="mt-3 text-sm text-gray-500">— Happy Client</footer>
+		</blockquote>
+		<blockquote class="p-6 rounded-2xl bg-white/60 dark:bg-white/5 backdrop-blur border border-gray-200 dark:border-gray-800">
+			<p>“Clear communication, great design sense, and solid code.”</p>
+			<footer class="mt-3 text-sm text-gray-500">— Product Manager</footer>
+		</blockquote>
+	</div>
+</section>
+
+<section id="faq" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">FAQ</h2>
+	<div class="mt-6 grid md:grid-cols-2 gap-6">
+		<div class="p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">What stack do you use?</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Python (Flask), Tailwind CSS, JavaScript, and MySQL with SQLAlchemy.</p>
+		</div>
+		<div class="p-6 rounded-2xl bg-gray-100 dark:bg-gray-800">
+			<h3 class="font-semibold">Do you take freelance work?</h3>
+			<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Yes—reach out via the contact form with details.</p>
+		</div>
+	</div>
+</section>
+
+<section class="container mx-auto px-6 py-16">
+	<div class="p-8 rounded-3xl bg-gradient-to-r from-primary to-fuchsia-500 text-white text-center">
+		<h2 class="text-2xl md:text-3xl font-bold">Have a project in mind?</h2>
+		<p class="mt-2 opacity-90">Let's build something great together.</p>
+		<a href="#contact" class="inline-block mt-5 px-6 py-3 rounded-full bg-white text-gray-900 hover:opacity-90">Get in touch</a>
+	</div>
+</section>
+
+<section id="contact" class="container mx-auto px-6 py-16">
+	<h2 class="text-3xl font-bold">Contact</h2>
+	<form action="/contact" method="POST" class="mt-6 grid md:grid-cols-2 gap-6 max-w-3xl">
+		<input class="px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 ring-primary" name="name" placeholder="Your Name" required>
+		<input class="px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 ring-primary" type="email" name="email" placeholder="Email" required>
+		<textarea class="md:col-span-2 px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 outline-none focus:ring-2 ring-primary" name="message" placeholder="Say hi..." rows="5" required></textarea>
+		<button class="md:col-span-2 px-5 py-3 rounded-xl bg-primary text-white hover:shadow-lg hover:shadow-primary/30 transition" type="submit">Send Message</button>
+	</form>
+	{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+			<div class="mt-6">
+				{% for category, message in messages %}
+					<div class="px-4 py-3 rounded-xl {{ 'bg-green-100 text-green-800' if category == 'success' else 'bg-red-100 text-red-800' }} dark:{{ 'bg-green-900/30 text-green-200' if category == 'success' else 'bg-red-900/30 text-red-200' }}">{{ message }}</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+	{% endwith %}
+</section>
+{% endblock %} 
