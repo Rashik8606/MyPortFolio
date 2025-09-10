@@ -18,6 +18,9 @@ def create_app() -> Flask:
 
 	db = SQLAlchemy(app)
 
+	app = create_app()
+
+
 	class Project(db.Model):
 		__tablename__ = "projects"
 		id = db.Column(db.Integer, primary_key=True)
